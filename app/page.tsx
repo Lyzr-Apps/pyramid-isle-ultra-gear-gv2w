@@ -51,7 +51,7 @@ const WORKSPACE_CONFIG: Record<string, { title: string; description: string }> =
 }
 
 const QUICK_CHIPS: Record<string, string[]> = {
-  world: ['Earth Island', 'Light Island', 'Fire Island', 'Dark Island', 'Water Island', 'Wind Island', 'Divine City', 'Ancient Pyramid'],
+  world: ['Earth Town', 'Light Town', 'Fire Town', 'Dark Town', 'Water Town', 'Wind Town', 'Divine City', "Pharaoh's Pyramid"],
   battles: ['Battle Rules', 'Duel Rules', 'Summoning System', 'Monster Box', 'XP System', 'Buddy System'],
   story: ['Earth Town Intro', 'Light Town', 'Fire Town', 'Dark Town', 'Water Town', 'Wind Town', 'Orb Quest', 'Underground Discovery', 'Divine City', 'Final Chapter'],
   monsters: ['Spellcaster', 'Dragon', 'Zombie', 'Cyborg', 'High Dragon', 'Magical Knight', 'Earth Element', 'Light Element', 'Dark Element', 'Fire Element', 'Water Element', 'Wind Element', 'Divine Element'],
@@ -59,14 +59,14 @@ const QUICK_CHIPS: Record<string, string[]> = {
 
 const CHIP_PROMPTS: Record<string, Record<string, string>> = {
   world: {
-    'Earth Island': 'Design Earth Island - a lush forested island with ancient ruins, stone temples, and earthy terrain for earth-element monsters.',
-    'Light Island': 'Design Light Island - a radiant floating island bathed in golden sunlight with crystal spires and celestial architecture.',
-    'Fire Island': 'Design Fire Island - a volcanic island with magma rivers, obsidian fortresses, and fiery wasteland terrain.',
-    'Dark Island': 'Design Dark Island - a shadowy island shrouded in perpetual twilight with gothic architecture and eerie forests.',
-    'Water Island': 'Design Water Island - an aquatic island with underwater grottos, coral palaces, and tidal waterfalls.',
-    'Wind Island': 'Design Wind Island - a sky-high floating island with wind-carved cliffs, cloud bridges, and aerial towers.',
-    'Divine City': 'Design the Divine City - the central hub city where all summoners gather, with grand coliseums and marketplace districts.',
-    'Ancient Pyramid': 'Design the Ancient Pyramid - a mysterious pyramid structure that serves as the final dungeon with hidden chambers.',
+    'Earth Town': 'Design Earth Town - the starting town on the circular island with Gothic stone buildings, a professor\'s lab, player house, rival house, temple, and store. Earthy terrain with ancient ruins and nature paths.',
+    'Light Town': 'Design Light Town - a radiant town bathed in golden sunlight with crystal spires, celestial architecture, and shimmering pathways on the circular island.',
+    'Fire Town': 'Design Fire Town - a volcanic town built from lava rock with magma rivers, obsidian fortresses, and fiery wasteland terrain spiraling upward on the island.',
+    'Dark Town': 'Design Dark Town - a shadowy cave-based town shrouded in perpetual twilight with gothic architecture and eerie underground passages on the island.',
+    'Water Town': 'Design Water Town - a coastal town with cliff ruins, underwater grottos, coral structures, and tidal waterfalls along the island\'s edge.',
+    'Wind Town': 'Design Wind Town - a sky-high town on the upper reaches of the island with wind-carved cliffs, cloud bridges, and aerial towers.',
+    'Divine City': 'Design Divine City - the hidden divine city that floats high in the clouds above the entire circular island. It is unlocked after collecting all 6 elemental orbs. Features grand celestial architecture, golden spires piercing through clouds, and ethereal pathways.',
+    "Pharaoh's Pyramid": 'Design the Pharaoh\'s Pyramid - a massive ancient pyramid at the center of the circular island next to the central lake. Contains hidden chambers, ancient keys, and underground secrets connecting to all towns.',
   },
   battles: {
     'Battle Rules': 'Design the core battle rules for monster summoner duels. Include turn order, action types, and win conditions.',
@@ -125,14 +125,14 @@ const ELEMENT_COLORS: Record<string, string> = {
 // ==================== SAMPLE DATA ====================
 
 const SAMPLE_WORLD = {
-  location_name: 'Verdant Earth Island',
-  architectural_style: 'Ancient stone temples overgrown with moss and crystal-infused pillars',
-  terrain_description: 'A sprawling island covered in dense emerald forests, rolling hills dotted with ancient megaliths, and cascading waterfalls feeding into crystal-clear lakes.',
-  key_buildings: ['Stone Temple of Gaia', 'The Mossheart Arena', 'Elder Tree Library', 'Crystal Cavern Market'],
+  location_name: 'Earth Town',
+  architectural_style: 'Gothic stone buildings with moss-covered pillars, arched doorways, and ancient stonework towers',
+  terrain_description: 'The starting town on the circular island, nestled at the base elevation. Dense emerald forests surround Gothic stone structures, with cobblestone paths winding between ancient megaliths and cascading waterfalls feeding into the central lake.',
+  key_buildings: ["Professor's Lab", 'Player House', 'Rival House', 'Stone Temple', 'General Store', 'Earth Coliseum'],
   environmental_effects: ['Floating spores that heal nearby monsters', 'Shifting stone platforms during battles', 'Periodic earthquakes that reshape terrain'],
-  interactive_elements: ['Climbable vines on temple walls', 'Breakable boulders hiding secret paths', 'Ancient rune stones that teach earth spells'],
-  elevation_notes: 'The island rises from sea-level beaches to a central mountain peak where the Earth Orb shrine sits.',
-  design_summary: 'A lush, layered island blending nature and ancient architecture, perfect for earth-element encounters and exploration.',
+  interactive_elements: ['Climbable vines on temple walls', 'Breakable boulders hiding secret paths', 'Ancient rune stones that teach earth spells', 'Underground passage entrance near the temple'],
+  elevation_notes: 'Earth Town sits at the lowest elevation on the circular island, with paths spiraling upward toward the other elemental towns and the central Pharaoh\'s Pyramid.',
+  design_summary: 'The hometown and starting area, blending Gothic stone architecture with lush nature. Contains all essential facilities for new summoners beginning their journey around the circular island.',
 }
 
 const SAMPLE_BATTLE = {
@@ -749,7 +749,7 @@ function ChatWorkspace({
       monsters: SAMPLE_MONSTER,
     }
     const samplePromptMap: Record<string, string> = {
-      world: 'Design Earth Island - a lush forested island with ancient ruins and earthy terrain.',
+      world: 'Design Earth Town - the starting town with Gothic stone buildings and earthy terrain.',
       battles: 'Design the core battle rules for monster summoner duels.',
       story: 'Write the opening chapter set in Earth Town.',
       monsters: 'Design a Dragon-type monster card with powerful fire attacks.',
