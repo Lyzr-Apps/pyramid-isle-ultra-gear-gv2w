@@ -1,0 +1,40 @@
+{
+  "agent_name": "World Builder Agent",
+  "agent_id": "69a1de07ff9f5d1338ea17c4",
+  "description": "Designs and iterates on the 3D circular island environment \u2014 town layouts, architectural styles (Gothic stone, lava rock, crystal, cave, cliff ruins, cloud city), terrain spiral elevation, pyramid placement, lake geography, and environmental details for all 6 towns + Divine City + Pharaoh's Pyramid",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "location_name": "string",
+    "architectural_style": "string",
+    "terrain_description": "string",
+    "key_buildings": [
+      "string"
+    ],
+    "environmental_effects": [
+      "string"
+    ],
+    "interactive_elements": [
+      "string"
+    ],
+    "elevation_notes": "string",
+    "design_summary": "string"
+  },
+  "example_response": {
+    "location_name": "sample string",
+    "architectural_style": "sample string",
+    "terrain_description": "sample string",
+    "key_buildings": [
+      "sample string"
+    ],
+    "environmental_effects": [
+      "sample string"
+    ],
+    "interactive_elements": [
+      "sample string"
+    ],
+    "elevation_notes": "sample string",
+    "design_summary": "sample string"
+  }
+}

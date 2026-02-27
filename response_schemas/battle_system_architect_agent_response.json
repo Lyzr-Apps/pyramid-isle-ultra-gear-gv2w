@@ -1,0 +1,44 @@
+{
+  "agent_name": "Battle System Architect Agent",
+  "agent_id": "69a1de0700dc36bcc425acc4",
+  "description": "Designs complete battle and duel mechanics \u2014 6-card line-up battles, Rush Duel rules, coin flip system, HP reduction, XP/leveling, summoning systems, Monster Box UI flow, tribute rules, buddy system, stat boosting items, and badge progression",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "mechanic_name": "string",
+    "category": "string",
+    "rules": [
+      "string"
+    ],
+    "formulas": [
+      "string"
+    ],
+    "flowchart_steps": [
+      "string"
+    ],
+    "examples": [
+      "string"
+    ],
+    "balance_notes": "string",
+    "design_summary": "string"
+  },
+  "example_response": {
+    "mechanic_name": "sample string",
+    "category": "sample string",
+    "rules": [
+      "sample string"
+    ],
+    "formulas": [
+      "sample string"
+    ],
+    "flowchart_steps": [
+      "sample string"
+    ],
+    "examples": [
+      "sample string"
+    ],
+    "balance_notes": "sample string",
+    "design_summary": "sample string"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "agent_name": "Monster & Card Designer Agent",
+  "agent_id": "69a1de0800dc36bcc425acc6",
+  "description": "Creates detailed monster card designs across all 30+ types, defines stats (ATK/DEF/SPD), level requirements, special summon material lists, element attributes, and generates card artwork descriptions",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "monster_name": "string",
+    "monster_type": "string",
+    "element": "string",
+    "level": "number",
+    "atk": "number",
+    "def": "number",
+    "spd": "number",
+    "summon_type": "string",
+    "summon_materials": [
+      "string"
+    ],
+    "special_abilities": [
+      "string"
+    ],
+    "lore": "string",
+    "artwork_description": "string",
+    "card_summary": "string"
+  },
+  "example_response": {
+    "monster_name": "sample string",
+    "monster_type": "sample string",
+    "element": "sample string",
+    "level": 0,
+    "atk": 0,
+    "def": 0,
+    "spd": 0,
+    "summon_type": "sample string",
+    "summon_materials": [
+      "sample string"
+    ],
+    "special_abilities": [
+      "sample string"
+    ],
+    "lore": "sample string",
+    "artwork_description": "sample string",
+    "card_summary": "sample string"
+  }
+}

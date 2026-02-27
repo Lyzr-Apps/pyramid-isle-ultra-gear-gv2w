@@ -1,0 +1,46 @@
+{
+  "agents": {
+    "world_builder_agent": {
+      "agent_id": "69a1de07ff9f5d1338ea17c4",
+      "name": "World Builder Agent",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "capabilities": ["text"],
+      "response_schema_file": "response_schemas/world_builder_agent_response.json"
+    },
+    "battle_system_agent": {
+      "agent_id": "69a1de0700dc36bcc425acc4",
+      "name": "Battle System Architect Agent",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.5,
+      "top_p": 0.95,
+      "capabilities": ["text"],
+      "response_schema_file": "response_schemas/battle_system_architect_agent_response.json"
+    },
+    "narrative_director_agent": {
+      "agent_id": "69a1de3195336657ed197779",
+      "name": "Narrative Director Agent",
+      "provider": "Anthropic",
+      "model": "claude-3-5-sonnet-latest",
+      "temperature": 0.8,
+      "top_p": 0.95,
+      "capabilities": ["text"],
+      "response_schema_file": "response_schemas/narrative_director_agent_response.json"
+    },
+    "monster_card_agent": {
+      "agent_id": "69a1de0800dc36bcc425acc6",
+      "name": "Monster & Card Designer Agent",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.8,
+      "top_p": 0.95,
+      "capabilities": ["text"],
+      "response_schema_file": "response_schemas/monster_card_designer_agent_response.json"
+    }
+  },
+  "workflow_pattern": "independent",
+  "total_agents": 4
+}

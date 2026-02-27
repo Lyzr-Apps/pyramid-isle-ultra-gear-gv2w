@@ -1,0 +1,44 @@
+{
+  "agent_name": "Narrative Director Agent",
+  "agent_id": "69a1de3195336657ed197779",
+  "description": "Writes and structures the full game narrative \u2014 town-by-town story progression, NPC dialogue, Card Mafia and Cult Summoner storylines, orb collection quest, ancient key discovery, underground Earth Town reveal, portal mechanics, and Divine City unlocking sequence",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "chapter_title": "string",
+    "story_beats": [
+      "string"
+    ],
+    "dialogue": [
+      "string"
+    ],
+    "characters_involved": [
+      "string"
+    ],
+    "quest_objectives": [
+      "string"
+    ],
+    "cutscene_description": "string",
+    "lore_notes": "string",
+    "narrative_summary": "string"
+  },
+  "example_response": {
+    "chapter_title": "sample string",
+    "story_beats": [
+      "sample string"
+    ],
+    "dialogue": [
+      "sample string"
+    ],
+    "characters_involved": [
+      "sample string"
+    ],
+    "quest_objectives": [
+      "sample string"
+    ],
+    "cutscene_description": "sample string",
+    "lore_notes": "sample string",
+    "narrative_summary": "sample string"
+  }
+}

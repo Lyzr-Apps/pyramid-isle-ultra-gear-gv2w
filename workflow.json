@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "User Query",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "world_builder_agent",
+      "type": "Agent",
+      "label": "World Builder Agent",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "battle_system_agent",
+      "type": "Agent",
+      "label": "Battle System Architect Agent",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "narrative_director_agent",
+      "type": "Agent",
+      "label": "Narrative Director Agent",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "monster_card_agent",
+      "type": "Agent",
+      "label": "Monster & Card Designer Agent",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "output_node",
+      "type": "Output",
+      "label": "Agent Response",
+      "nodeCategory": "end"
+    }
+  ],
+  "edges": [
+    { "source": "input_node", "target": "world_builder_agent" },
+    { "source": "input_node", "target": "battle_system_agent" },
+    { "source": "input_node", "target": "narrative_director_agent" },
+    { "source": "input_node", "target": "monster_card_agent" },
+    { "source": "world_builder_agent", "target": "output_node" },
+    { "source": "battle_system_agent", "target": "output_node" },
+    { "source": "narrative_director_agent", "target": "output_node" },
+    { "source": "monster_card_agent", "target": "output_node" }
+  ],
+  "agents": [
+    {
+      "node_id": "world_builder_agent",
+      "agent_id": "69a1de07ff9f5d1338ea17c4",
+      "name": "World Builder Agent",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.7,
+      "top_p": 0.95
+    },
+    {
+      "node_id": "battle_system_agent",
+      "agent_id": "69a1de0700dc36bcc425acc4",
+      "name": "Battle System Architect Agent",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.5,
+      "top_p": 0.95
+    },
+    {
+      "node_id": "narrative_director_agent",
+      "agent_id": "69a1de3195336657ed197779",
+      "name": "Narrative Director Agent",
+      "provider": "Anthropic",
+      "model": "claude-3-5-sonnet-latest",
+      "temperature": 0.8,
+      "top_p": 0.95
+    },
+    {
+      "node_id": "monster_card_agent",
+      "agent_id": "69a1de0800dc36bcc425acc6",
+      "name": "Monster & Card Designer Agent",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.8,
+      "top_p": 0.95
+    }
+  ]
+}
